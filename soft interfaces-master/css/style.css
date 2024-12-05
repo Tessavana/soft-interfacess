@@ -166,7 +166,7 @@ a, a:hover {
 .unslate_co--site-nav {
   padding-top: 30px;
   padding-bottom: 30px;
-  position: absolute;
+  position: fixed;
   left: 0;
   font-weight: 400;
   z-index: 1002;

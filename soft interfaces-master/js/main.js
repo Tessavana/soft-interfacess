@@ -392,17 +392,17 @@ var mobileToggleClick = function() {
   });
 
   // click outisde offcanvas
-	$(document).mouseup(function(e) {
-    var container = $(".unslate_co--site-mobile-menu");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ( $('body').hasClass('offcanvas') ) {
-				$('body').removeClass('offcanvas');
-				$('body').find('.js-menu-toggle').removeClass('active');
+	// $(document).mouseup(function(e) {
+    // var container = $(".unslate_co--site-mobile-menu");
+    // if (!container.is(e.target) && container.has(e.target).length === 0) {
+    //   if ( $('body').hasClass('offcanvas') ) {
+	// 			$('body').removeClass('offcanvas');
+	// 			$('body').find('.js-menu-toggle').removeClass('active');
 
-				$('body').find('.js-burger-toggle-menu').removeClass('open');
-			}
-    }
-	}); 
+	// 			$('body').find('.js-burger-toggle-menu').removeClass('open');
+	// 		}
+    // }
+	// }); 
 };
 
 
