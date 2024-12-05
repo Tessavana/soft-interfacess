@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Updates</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Ensure the header has enough space to avoid overlap */
+    .cover-v1 {
+      margin-bottom: 40px; /* Add space to prevent title overlap with the nav */
+    }
+
+    /* Updates Page Layout */
+    .update-entry {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px; /* Space between updates */
+    }
+
+    .update-entry img {
+      max-width: 150px; /* Resize the image */
+      margin-right: 20px; /* Add space between the image and text */
+    }
+
+    .update-entry h3 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: bold;
+      color: black; /* Black color for the headlines */
+      text-align: left; /* Left-align the headline */
+    }
+
+    .update-entry p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Add margin for space before the updates section */
+    .updates-section {
+      margin-top: 200px; /* Increase space between header and updates */
+    }
+
+    /* Updates title styling */
+    .updates-title {
+      font-weight: bold;
+      font-size: 36px; /* Adjust size for the "Updates" title */
+      text-align: left;
+      margin-left: 20px; /* Space from the left edge */
+      margin-bottom: 40px; /* Space below the title */
+    }
+
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+      .update-entry {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .update-entry img {
+        margin-bottom: 15px;
+      }
+    }
+
+/* Target the navigation bar only on the Updates page */
+.updates-page .unslate_co--site-nav a {
+  color: black !important; /* Set the text color to black, and use !important to ensure no override */
+}
+
+.updates-page .unslate_co--site-nav .site-logo a {
+  color: black !important; /* Ensure the logo text is also black */
+}
+
+/* Ensure space at the top so content doesn't overlap */
+.cover-v1 {
+  margin-bottom: 60px; /* Adjust to make space for the header */
+}
+
+/* In the header's background, replace the white version of the image with the black one */
+.updates-page .cover-v1 {
+  background-image: url('images/logo-dark.png'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+}
+
+.updates-page .cover-v1 {
+  background-image: url('images/logo-dark.png');
+}
+
+
+
+
+
+  </style>
+
+</head>
+<body class="updates-page">
+
+  <!-- Dynamically Load the Header -->
+  <div id="header-container"></div>
+
+  <script>
+    // This will load the header.html into the element with ID "header-container"
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+  <div class="container updates-section">
+    <!-- Updates Title Section -->
+    <h1 class="updates-title">Updates</h1>
+    
+    <div class="row">
+      <!-- Example of an update entry -->
+      <div class="col-md-12">
+        <div class="update-entry">
+          <img src="images/DSRS.jpg" alt="Update image" class="img-fluid">
+          <div>
+            <h3><a href="update-detail-1.html">Presenting VENTI at the Dutch Soft Robotics Symposium 2024</p>
+                <p>May 29, 2024</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="update-entry">
+          <img src="images/work_2_b_full.jpg" alt="Update image" class="img-fluid">
+          <div>
+            <h3><a href="update-detail-2.html">VENTI in workshop with Jonas Jørgensen</a></h3>
+            <p>May 15, 2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="update-entry">
+          <img src="images/about_me_pic.jpg" alt="Update image" class="img-fluid">
+          <div>
+            <h3><a href="update-detail-3.html">VENTI in the Design United sample gallery at DDW 2023</a></h3>
+            <p>October 21, 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="unslate_co--footer unslate_co--section">
+    <p class="footer-copyright">
+      <script>
+        document.write(new Date().getFullYear());
+      </script> Soft Interfaces | Tessa van Abkoude
+    </p>
+  </footer>
+
+  <script src="js/scripts-dist.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
