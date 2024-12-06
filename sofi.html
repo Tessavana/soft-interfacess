@@ -5,8 +5,8 @@
   <title>SOFI - Project Details</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="SOFI project details.">
-  <meta name="keywords" content="SOFI, Web Design, Identity">
+  <meta name="description" content="VENTI toolkit project details.">
+  <meta name="keywords" content="VENTI toolkit, Web Design, Identity">
   <meta name="author" content="Tessa van Abkoude">
 
   <link rel="stylesheet" href="css/vendor/icomoon/style.css">
@@ -18,143 +18,262 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
 
+  <style>
+    /* Custom styles for this specific page to narrow the container */
+    .narrow-container {
+      width: 70%; /* Adjust this percentage to make the page narrower */
+      max-width: 1000px; /* Set a maximum width */
+      margin: 0 auto; /* Center the content horizontally */
+    }
+
+    /* Spread out the Tags, Date, and Links across the page */
+    .row {
+      display: flex;
+      justify-content: space-between; /* Ensures that the sections are spread out */
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    /* Ensure the Tags, Date, and Links each take up an equal amount of space */
+    .row .col-md-4 {
+      flex: 1;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: left; /* Align text to the left */
+    }
+
+    /* Styling for Links to push them to the right */
+    .col-md-4 a {
+      display: block;
+      text-align: left; /* Align the links to the left */
+      margin-bottom: 5px;
+    }
+
+    /* Styling for Tags, Date, and Links titles */
+    h5 {
+      font-weight: normal;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Ensure Design Process heading aligns with the tags */
+    h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Styling for the images in carousel */
+    .owl-carousel img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover; /* This will crop the image to fill the container */
+    }
+
+    /* Ensure all images are aligned */
+    .portfolio-single-wrap figure {
+      margin-bottom: 20px; /* Add spacing between images */
+    }
+
+    /* Responsive Embed Video */
+    .embed-responsive-16by9 {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .embed-responsive-16by9 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
 
-  <!-- Navigation -->
-  <nav class="unslate_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-      <a href="index.html" class="d-flex ml-auto js-menu-toggle">
-        <span class="close-label">Back to Portfolio</span>
-        <div class="close-times">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-        </div>
-      </a>
-    </div>
-    <div class="site-mobile-inner"></div>
-  </nav>
+  <!-- Dynamically Load the Header -->
+  <div id="header-container"></div>
 
-  <div class="unslate_co--site-wrap">
-    <div class="unslate_co--site-inner">
+  <script>
+    // This will load the header.html into the element with ID "header-container"
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
 
-      <!-- Main Navigation -->
-      <nav class="unslate_co--site-nav site-nav-target">
-        <div class="container">
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="index.html#home-section" class="nav-link">Home</a></li>
-                <li><a href="index.html#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="index.html#about-section" class="nav-link">About</a></li>
-                <li><a href="index.html#services-section" class="nav-link">Services</a></li>
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">Soft interfaces<span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="index.html#Tutorials-section" class="nav-link">Tutorials</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Project Details Header -->
-      <div class="cover-v1 gradient-bottom-black jarallax">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10 mx-auto text-center">
-              <h1 class="heading" data-aos="fade-up">SOFI</h1>
-              <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries.</h2>
-            </div>
-          </div>
-        </div>
+<!-- Project Details Header -->
+<div class="cover-v1 gradient-bottom-black jarallax" style="background-image: url('images/SOFI/SOFI sofa.png'); background-size: cover; background-position: center;">
+  <div class="container narrow-container">
+    <div class="row align-items-center">
+      <div class="col-md-10 mx-auto text-center">
+        <h1 class="heading" data-aos="fade-up">SOFI</h1>
+        <h2 class="subheading" data-aos="fade-up" data-aos-delay="100">A soft magnetic interfaces for in your sofa</h2>
       </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Project Details Content -->
+  <div class="container narrow-container">
+    <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
+      <div class="portfolio-single-inner">
+        <h2 class="heading-portfolio-single-h2">SOFI</h2>
 
-      <!-- Project Details Content -->
-      <div class="container">
+        <!-- Carousel Section -->
+        <div class="row justify-content-between mb-4">
+          <div class="col-12 mb-4">
+            <div class="owl-carousel single-slider">
+              <figure class="mb-4">
+                <img src="images/SOFI/SOFI design.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <figure class="mb-4">
+                <img src="images/SOFI/SOFI-square.png" alt="Image" class="img-fluid">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Details -->
         <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
           <div class="portfolio-single-inner">
-            <h2 class="heading-portfolio-single-h2">SOFI</h2>
 
-            <div class="row justify-content-between mb-5">
-              <div class="col-12 mb-4">
-                <div class="owl-carousel single-slider">
-                  <figure class="mb-4">
-                    <img src="images/work_1_full.jpg" alt="Image" class="img-fluid">
-                  </figure>
-                  <figure class="mb-4">
-                    <img src="images/work_1_a_full.jpg" alt="Image" class="img-fluid">
-                  </figure>
+            <!-- Tags, Date, Links -->
+            <div class="row justify-content-between mb-4">
+              <div class="col-md-4 mb-4">
+                <h5>Tags</h5>
+                <p>
+                  <span class="tags-style">Magnetics</span>
+                  <span class="tags-style">Fabric</span>
+                  <span class="tags-style">Vibration</span>
+                </p>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <h5>Date</h5>
+                <p>November 2023</p>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <h5>Links</h5>
+                <div>
+                  <a href="https://www.4tu.nl/du/projects/sample-gallery/" target="_blank">DDW2023</a>
                 </div>
-              </div>
-
-              <div class="col-12 mb-5">
-                <div class="row">
-                  <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="detail-v1">
-                      <span class="detail-label">Project Date</span>
-                      <span class="detail-val">March 9th, 2020</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="detail-v1">
-                      <span class="detail-label">Role</span>
-                      <span class="detail-val"><a href="#">Identity</a>, <a href="#">Web Design</a></span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="detail-v1">
-                      <span class="detail-label">Client</span>
-                      <span class="detail-val">unslate</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-3">
-                    <div class="detail-v1">
-                      <span class="detail-label">Visit</span>
-                      <span class="detail-val"><a href="#">https:///</a></span>
-                    </div>
-                  </div>
+                <div>
+                  <a href="https://dutchsoftrobotics.nl/events/dutch-soft-robotics-symposium-2024" target="_blank">DSRS2024</a>
                 </div>
-              </div>
-
-              <div class="col-md-6 pr-md-5">
-                <p>SOFI description here. Replace this with project-specific content., there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-
-              <div class="col-md-6 pl-md-5">
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
               </div>
             </div>
-          </div>
+
+<p> SOFI: a soft shape-changing interface for smart home systems, utilizing magnetic actuation. SOFI's fabric is made of two textile layers with an embroidery pattern that secures small disk magnets, manipulated by a stepper motor and electromagnet mechanism. By changing the stepper motor's polarity and motions, SOFI can display various shape changes, providing visual and haptic feedback to interact with smart home objects.</p>          </div>
         </div>
+
+<!-- Design Process Section -->
+<div class="row justify-content-between mb-4">
+  <h3>Motion patterns</h3>
+  <figure>
+    <img src="images/SOFI/SOFI mps.png" alt="Design Process" class="img-fluid">
+    <figcaption>Overview of the motion patterns</figcaption>
+  </figure>
+  <p>
+    The four motion patterns (MP) created are: (MP1) the stepper motor spins (alternating between clockwise and counterclockwise) while the electromagnet's polarity is set to opposite of the magnets in the fabric, causing it to pull down the fabric as it passes the magnets, (MP2) the stepper motor spins while the electromagnet's polarity is set to the same as the magnets in the fabric, causing it to push away the fabric as it passes the magnets, (MP3) the electromagnet switches between polarities while the stepper motor remains in place, causing the fabric above the electromagnet to pulse and (MP4) the electromagnet switches between polarities while the stepper motor spins, causing the fabric to pulse as the electromagnet passes the magnets.
+  </p>
+</div>
+
+<div class="container narrow-container mb-4">
+  <h3>Motion Pattern GIFs</h3>
+  <div class="mb-4">
+    <img src="images/SOFI/SOFI s1.gif" alt="Motion Pattern 1" class="img-fluid w-100">
+    <figcaption>MP1: Stepper motor spins, electromagnet pulls fabric down</figcaption>
+  </div>
+  <div class="mb-4">
+    <img src="images/SOFI/SOFI s2.gif" alt="Motion Pattern 2" class="img-fluid w-100">
+    <figcaption>MP2: Stepper motor spins, electromagnet pushes fabric away</figcaption>
+  </div>
+  <div class="mb-4">
+    <img src="images/SOFI/SOFI s3.gif" alt="Motion Pattern 3" class="img-fluid w-100">
+    <figcaption>MP3: Electromagnet switches polarities, fabric pulses</figcaption>
+  </div>
+  <div class="mb-4">
+    <img src="images/SOFI/SOFI s4.gif" alt="Motion Pattern 4" class="img-fluid w-100">
+    <figcaption>MP4: Electromagnet switches polarities while motor spins, fabric pulses</figcaption>
+  </div>
+</div>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+  // Select all video iframes
+  const videoIframes = document.querySelectorAll('iframe');
+
+  const options = {
+    root: null, // Use the viewport as the root
+    threshold: 0.5 // Trigger autoplay when 50% of the iframe is visible
+  };
+
+  // Create the Intersection Observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      const iframe = entry.target; // The iframe element being observed
+
+      if (entry.isIntersecting) {
+        // Add autoplay parameter to the video URL if it's not already there
+        let src = iframe.src;
+        if (!src.includes("autoplay=1")) {
+          iframe.src = src + "&autoplay=1"; // Add autoplay to the URL
+        }
+      } else {
+        // Remove autoplay parameter when video goes out of view
+        let src = iframe.src;
+        iframe.src = src.replace("&autoplay=1", ""); // Remove autoplay
+      }
+    });
+  }, options);
+
+  // Start observing each iframe element
+  videoIframes.forEach(iframe => {
+    observer.observe(iframe);
+  });
+});
+
+</script>
+
+
+        <!-- Next Project Button -->
+        <div class="col-12 text-center mt-5">
+          <a href="wsw.html" class="next-project">Next Project: Wool Steel Wool &nbsp;<span>&rarr;</span></a>
+        </div>
+
       </div>
-
     </div>
-
-    <!-- Footer Section -->
-    <footer class="unslate_co--footer unslate_co--section">
-      <p class="footer-copyright">
-        <script>
-          document.write(new Date().getFullYear());
-        </script> Soft Interfaces | Tessa van Abkoude
-      </p>
-    </footer>
-
   </div>
 
-  <!-- Loader -->
-  <div id="unslate_co--overlayer"></div>
-  <div class="site-loader-wrap">
-    <div class="site-loader"></div>
-  </div>
+  <!-- Footer Section -->
+  <footer class="unslate_co--footer unslate_co--section">
+    <p class="footer-copyright">
+      <script>
+        document.write(new Date().getFullYear());
+      </script> Soft Interfaces | Tessa van Abkoude
+    </p>
+  </footer>
 
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
+</div>
+
+<!-- Loader -->
+<div id="unslate_co--overlayer"></div>
+<div class="site-loader-wrap">
+  <div class="site-loader"></div>
+</div>
+
+<script src="js/scripts-dist.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
