@@ -184,75 +184,142 @@
             <img src="images/VENTI/VENTI layout.png" alt="Design Process" class="img-fluid">
             <figcaption>Overview of the toolkit components            </figcaption>
           </figure>
-          <p>Here is a detailed description of the design process for VENTI toolkit. It includes various steps taken to bring the project from initial concept to final design.</p>
+          <p>VENTI consists of three elements: soft pneumatic actuator modules, connectors, and a control panel. Seven different modules have been developed to offer a variety of shape-changes: two texture modules, two directional modules, two shape modules, and one layered module. Due to the modular design, every module can be combined with another module.
+
+            Messing rods are used to connect the modules with each other, and the solid messing rods are used to stop the airflow at the module you want. The clear tube connectors can be used to go from one to up to three different directions.
+            
+            The control box has two modes: frequency mode and control mode. In frequency mode, users can control the amplitude and frequency of the airflow with the four potentiometers. They are able to play two different frequencies at the same time. In control mode, users can press one of the four motor buttons to push or extract air from a module. The valve buttons can be used to switch between air inputs. </p>
         </div>
 
         <div class="row justify-content-between mb-4">
           <h3>User using the toolkit</h3>
           <div class="embed-responsive embed-responsive-16by9" id="video-container">
             <iframe class="embed-responsive-item img-fluid" 
-                   src="https://www.youtube.com/embed/K7KIywNvvt4?mute=1" 
+                   src="https://www.youtube.com/embed/UN8ELpyJOCU?mute=1" 
                    frameborder="0"
                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                    allowfullscreen id="video-iframe">
             </iframe>
           </div>
+          <p>
+            A user is able to control the inflatable modules while interacting and experiencing them. Instead of having to program behaviour and then upload the code to look what it would do. VENTI allows for real time exploration in motion patters. In frequency mode you can try out different frequencies. From very fast paced vibrations (158 hz) to very low paced frequencies that feel like breathing. In the contorl mode the user can click buttons for several channels to just add or substract air. The valves ensure that this is a closed system.
+          </p>
         </div>
 
         <div class="row justify-content-between mb-4">
-          <h3>Prototyping Phase</h3>
+          <h3>Module design</h3>
           <figure>
-            <img src="images/VENTI.jpg" alt="Prototyping" class="img-fluid">
-            <figcaption>Prototyping phase in action</figcaption>
+            <img src="images/VENTI/VENTI mold exploded.png" alt="Prototyping" class="img-fluid">
+            <figcaption>The three mold used to make the "hairy" module</figcaption>
           </figure>
-          <p>This section describes the prototyping phase of the project, detailing the materials used and the testing process.</p>
+          <p>The bottom molds are made from Dragonskin 30, a harder silicone chosen to prevent ballooning while inflated. Also with a stiffer bottom the modules stay in place. The bottom mold has three input holes of 3.5 mm. These allow for the connection of air tubes, with the design ensuring that the tubes fit air tight without requiring excessive force. The air tubes in the bottom mold have wider diameters at the side to help with putting the messing tubes into the modules. The mold is cured for two hours before being removed to ensure the silicone is firm enough to hold its shape but flexible enough to avoid breaking or bending.</p>
+          <p>The top mold is made from Ecoflex 30, a soft silicone that is flexible and can strechts many times its original size without tearing. The top mold has openings in the middles for air to enter and specific chambers that allow certain areas of the module to inflate. After the silicone is poured into the mold, it cures for 4 hours. Then, the top mold is glued to the bottom mold using more Ecoflex 30 to make sure it is airtight. The mold is left to set for an additional 12 hours to ensure the top and bottom parts stick together properly.</p>
+          <div class="embed-responsive embed-responsive-16by9" id="video-container">
+            <iframe class="embed-responsive-item img-fluid" 
+                   src="https://www.youtube.com/embed/kkhc84HCrh8?mute=1" 
+                   frameborder="0"
+                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen id="video-iframe">
+            </iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9" id="video-container">
+          <iframe class="embed-responsive-item img-fluid" 
+                 src="https://www.youtube.com/embed/IhcXy7c4IKU?mute=1" 
+                 frameborder="0"
+                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen id="video-iframe">
+          </iframe>
+      </div>
+
+
+        <div class="row justify-content-between mb-4">
+          <h3>Connectors</h3>
+          <figure>
+            <img src="images/VENTI/VENTI connectors.png" alt="Prototyping" class="img-fluid">
+            <figcaption>The connector designs</figcaption>
+          </figure>
+          <p> To ensure airtight connections between the modules, clear SLA 3D printed connectors are used. These connectors have a rounded square shape to prevent the tubes from slipping off. The connectors have an inner diameter of 2 mm and are for 2,5-4 mm silicon tubes.</p>
+          <p>The messing tubes rods are 4mm and can easily but put into the modules for an air tight connection. This easy insertion allows for more exploration and a better experience while using VENTI.</p>
         </div>
 
         <!-- Subheader and Paragraphs -->
         <div class="row justify-content-between mb-4">
-          <h3>Final Results</h3>
-          <p>The final prototype showcases a seamless blend of functionality and aesthetic. This section goes into more detail about the testing process and how the final product was shaped by feedback.</p>
+          <h3>Control box</h3>
+          <figure>
+            <img src="images/VENTI/VENTI control box.jpg" alt="Prototyping" class="img-fluid">
+            <figcaption>The pneumatic control box</figcaption>
+            <p>The control box has 4 potmeters, 2 are used to control the frequency of two channels and two potmeters are used to control the amplitude (air flow) of these frequencies. Then the 4 moters can all be separately controlled via 4 push buttons. Two of the valves are already used to generate the frequencies. So then the other four valves can be controlled via the four black buttons on the right, that stay in the position you push them in.</p>
+   
+            <img src="images/VENTI/VENTI electronics.jpg" alt="Prototyping" class="img-fluid"> 
+            <figcaption>The pneumatic control box electronics</figcaption>
+
+            <img src="images/VENTI/VENTI circuit1.png" alt="Prototyping" class="img-fluid"> 
+            <figcaption>The pneumatic control box circuit</figcaption>         
+          </figure>
+          <p>VENTI uses a LM2596 DC/DC converter to regulate the different voltages.  The motors and valves are controlled using n-channel FETs. A Teensy 4.0 due to its large number of PWM pins, is used as the microcontroller for VENTI.</p>
         </div>
-<!-- Embed Video Section -->
-<div class="row justify-content-between mb-4">
-  <h3>Project Video</h3>
-  <div class="embed-responsive embed-responsive-16by9" id="video-container">
-    <iframe class="embed-responsive-item img-fluid" 
-           src="https://www.youtube.com/embed/K7KIywNvvt4?mute=1" 
-           frameborder="0"
-           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-           allowfullscreen id="video-iframe">
-    </iframe>
-  </div>
-</div>
+        <!-- Embed Video Section -->
+
+        <h3>Ideas made with VENTI</h3>
+        <div class="embed-responsive embed-responsive-16by9" id="video-container">
+          <iframe class="embed-responsive-item img-fluid" 
+                 src="https://www.youtube.com/embed/kkhc84HCrh8?mute=1" 
+                 frameborder="0"
+                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen id="video-iframe">
+          </iframe>
+      </div>
+
+          <h3>VENTI at DDW</h3>
+        <div class="embed-responsive embed-responsive-16by9" id="video-container">
+          <iframe class="embed-responsive-item img-fluid" 
+                 src="https://www.youtube.com/embed/LFgs1YvqVQM?mute=1" 
+                 frameborder="0"
+                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen id="video-iframe">
+          </iframe>
+      </div>
+
+        
+        
+
+        
 
 <script>
-  // Create an intersection observer to detect when the video section is in view
-  const videoIframe = document.getElementById('video-iframe');
-  const videoContainer = document.getElementById('video-container');
-  
+ document.addEventListener("DOMContentLoaded", function() {
+  // Select all video iframes
+  const videoIframes = document.querySelectorAll('iframe');
+
   const options = {
-    root: null, // use the viewport as the root
-    threshold: 0.5 // video will trigger autoplay when 50% of it is in view
+    root: null, // Use the viewport as the root
+    threshold: 0.5 // Trigger autoplay when 50% of the iframe is visible
   };
-  
+
+  // Create the Intersection Observer
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      // If the video section is in view
+      const iframe = entry.target; // The iframe element being observed
+
       if (entry.isIntersecting) {
-        // Add autoplay to the video URL
-        const currentSrc = videoIframe.src;
-        videoIframe.src = currentSrc + '&autoplay=1';
+        // Add autoplay parameter to the video URL if it's not already there
+        let src = iframe.src;
+        if (!src.includes("autoplay=1")) {
+          iframe.src = src + "&autoplay=1"; // Add autoplay to the URL
+        }
       } else {
-        // If the video is out of view, remove autoplay
-        const currentSrc = videoIframe.src;
-        videoIframe.src = currentSrc.replace('&autoplay=1', '');
+        // Remove autoplay parameter when video goes out of view
+        let src = iframe.src;
+        iframe.src = src.replace("&autoplay=1", ""); // Remove autoplay
       }
     });
   }, options);
-  
-  // Start observing the video container
-  observer.observe(videoContainer);
+
+  // Start observing each iframe element
+  videoIframes.forEach(iframe => {
+    observer.observe(iframe);
+  });
+});
+
 </script>
 
 

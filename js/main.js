@@ -296,7 +296,7 @@ var scrollWindow = function() {
 		var $w = $(this),
 				st = $w.scrollTop(),
 				navbar = $('.unslate_co--site-nav');
-				// sd = $('.js-scroll-wrap');
+				sd = $('.js-scroll-wrap');
 
 		if (st > 150) {
 			if ( !navbar.hasClass('scrolled') ) {

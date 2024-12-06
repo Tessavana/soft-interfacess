@@ -360,7 +360,7 @@ a {
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #fff !important;
+    background: white !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding-top: 5px;
